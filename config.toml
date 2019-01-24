@@ -1,0 +1,12 @@
+baseURL = "https://hearken.me/"
+languageCode = "zh-cn"
+title = "hearken.me"
+theme = "hugo-theme-cactus-plus"
+Paginate = 10
+[outputs]
+home = [ "HTML", "RSS" ]
+
+[params]
+   description = "Please Hearken me"
+[taxonomies]
+   tag = "tags"
