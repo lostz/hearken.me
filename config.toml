@@ -1,12 +1,31 @@
 baseURL = "https://hearken.me/"
 languageCode = "zh-cn"
-title = "hearken.me"
-theme = "hugo-theme-cactus-plus"
-Paginate = 10
-[outputs]
-home = [ "HTML", "RSS" ]
+defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
+title = "Xingchen`s Blog"
+hasCJKLanguage = true  
+theme = "zozo"
+summaryLength = 100
+paginate = 4 
 
-[params]
-   description = "Please Hearken me"
-[taxonomies]
-   tag = "tags"
+[author]                  # essential                     # 必需
+  name = "xingchen"
+[[menu.main]]                          # config your menu  # 配置菜单
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Archive"
+  weight = 20
+  identifier = "archive"
+  url = "/post/"
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "About"
+  weight = 40
+  identifier = "about"
+  url = "/about/"
